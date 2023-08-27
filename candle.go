@@ -34,6 +34,10 @@ func (c *Client) GetCandleData(candleParam CandleParams) ([]CandleResponse, erro
 	err := c.doEnvelope(http.MethodPost, URICandleData, params, nil, &candleData, true)
 
 	// if no data found for given date
+	if candleData == nil {
+		return nil, nil
+	}
+
 	err = json.Unmarshal(*candleData, &e)
 	if err != nil {
 		return nil, err
