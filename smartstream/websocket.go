@@ -34,7 +34,7 @@ type WebSocket struct {
 	subroutineCancel    context.CancelFunc
 }
 
-//MessageHandler Handler interface for handling messages received over smartstream websocket
+// MessageHandler Handler interface for handling messages received over smartstream websocket
 type callbacks struct {
 	onLTP             func(ltpInfo models.LTPInfo)
 	onQuote           func(quote models.Quote)
@@ -49,7 +49,7 @@ type callbacks struct {
 
 var (
 	// Default ticker url.
-	substreamURL = url.URL{Scheme: "ws", Host: "smartapisocket.angelone.in", Path: "/smart-stream"}
+	substreamURL = url.URL{Scheme: "wss", Host: "smartapisocket.angelone.in", Path: "/smart-stream"}
 )
 
 const (
