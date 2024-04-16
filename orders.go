@@ -58,7 +58,7 @@ type OrderParams struct {
 	SquareOff        string `json:"squareoff"`
 	StopLoss         string `json:"stoploss"`
 	Quantity         string `json:"quantity"`
-	TrailingStopLoss string `json:"trailingstoploss"`
+	TrailingStopLoss string `json:"trailingStopLoss"`
 }
 
 // OrderParams represents parameters for modifying an order.
