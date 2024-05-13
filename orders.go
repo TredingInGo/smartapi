@@ -58,7 +58,7 @@ type OrderParams struct {
 	SquareOff        string `json:"squareoff"`
 	StopLoss         string `json:"stoploss"`
 	Quantity         string `json:"quantity"`
-	TrailingStopLoss string `json:"trailingstoploss"`
+	TrailingStopLoss string `json:"trailingStopLoss"`
 }
 
 // OrderParams represents parameters for modifying an order.
@@ -73,6 +73,7 @@ type ModifyOrderParams struct {
 	TradingSymbol string `json:"tradingsymbol"`
 	SymbolToken   string `json:"symboltoken"`
 	Exchange      string `json:"exchange"`
+	TriggerPrice  string `json:"triggerprice"`
 }
 
 // OrderResponse represents the order place success response.
