@@ -11,7 +11,7 @@ type Order struct {
 	ProductType             string  `json:"producttype"`
 	Duration                string  `json:"duration"`
 	Price                   float64 `json:"price"`
-	TriggerPrice            string  `json:"triggerprice"`
+	TriggerPrice            float64 `json:"triggerprice"`
 	Quantity                string  `json:"quantity"`
 	DisclosedQuantity       string  `json:"disclosedquantity"`
 	SquareOff               string  `json:"squareoff"`
