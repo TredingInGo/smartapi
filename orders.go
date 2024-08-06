@@ -22,12 +22,12 @@ type Order struct {
 	Exchange                string  `json:"exchange"`
 	SymbolToken             string  `json:"symboltoken"`
 	InstrumentType          string  `json:"instrumenttype"`
-	StrikePrice             string  `json:"strikeprice"`
+	StrikePrice             float64 `json:"strikeprice"`
 	OptionType              string  `json:"optiontype"`
 	ExpiryDate              string  `json:"expirydate"`
 	LotSize                 string  `json:"lotsize"`
 	CancelSize              string  `json:"cancelsize"`
-	AveragePrice            string  `json:"averageprice"`
+	AveragePrice            float64 `json:"averageprice"`
 	FilledShares            string  `json:"filledshares"`
 	UnfilledShares          string  `json:"unfilledshares"`
 	OrderID                 string  `json:"orderid"`
