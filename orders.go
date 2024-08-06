@@ -46,19 +46,19 @@ type Orders []Order
 
 // OrderParams represents parameters for placing an order.
 type OrderParams struct {
-	Variety          string `json:"variety"`
-	TradingSymbol    string `json:"tradingsymbol"`
-	SymbolToken      string `json:"symboltoken"`
-	TransactionType  string `json:"transactiontype"`
-	Exchange         string `json:"exchange"`
-	OrderType        string `json:"ordertype"`
-	ProductType      string `json:"producttype"`
-	Duration         string `json:"duration"`
-	Price            string `json:"price"`
-	SquareOff        string `json:"squareoff"`
-	StopLoss         string `json:"stoploss"`
-	Quantity         string `json:"quantity"`
-	TrailingStopLoss string `json:"trailingStopLoss"`
+	Variety          string  `json:"variety"`
+	TradingSymbol    string  `json:"tradingsymbol"`
+	SymbolToken      string  `json:"symboltoken"`
+	TransactionType  string  `json:"transactiontype"`
+	Exchange         string  `json:"exchange"`
+	OrderType        string  `json:"ordertype"`
+	ProductType      string  `json:"producttype"`
+	Duration         string  `json:"duration"`
+	Price            string  `json:"price"`
+	SquareOff        string  `json:"squareoff"`
+	StopLoss         float64 `json:"stoploss"`
+	Quantity         string  `json:"quantity"`
+	TrailingStopLoss float64 `json:"trailingStopLoss"`
 }
 
 // OrderParams represents parameters for modifying an order.
